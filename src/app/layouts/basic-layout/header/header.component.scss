@@ -1,5 +1,47 @@
 header {
   position: sticky;
-  top: 1rem;
+  top: 0;
+  padding: 1rem;
+  background-image: url('./../../../../assets/img/bg.jpg');
+  background-position: center;
+
+  @media screen and (min-width: 992px) {
+    height: 100vh;
+  }
+
+  .custom-navbar-brand {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+
+  .custom-brand {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
 }
 
