@@ -7,6 +7,7 @@ import { BasicLayoutComponent } from './layouts/basic-layout/basic-layout.compon
 import { HeaderComponent } from './layouts/basic-layout/header/header.component';
 import { MainComponent } from './layouts/basic-layout/main/main.component';
 import { FooterComponent } from './layouts/basic-layout/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './layouts/basic-layout/footer/footer.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
