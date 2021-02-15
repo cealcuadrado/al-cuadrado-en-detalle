@@ -5,6 +5,12 @@ header {
   background-image: url('./../../../../assets/img/bg.jpg');
   background-position: center;
 
+  @media screen and (max-width: 991px) {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
   @media screen and (min-width: 992px) {
     height: 100vh;
   }
@@ -31,12 +37,28 @@ header {
     background-color: black;
     text-transform: uppercase;
     padding: 0.5rem;
-    font-size: 2rem;
-    text-align: right;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+
+
+    @media screen and (min-width: 992px) {
+      font-size: 2rem;
+      text-align: right;
+    }
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+
+  .navbar-toggler {
+    border-radius: 0;
+    padding: 0.5rem;
+    color: white;
+    background-color: black;
 
     &:hover {
       color: black;
