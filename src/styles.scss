@@ -2,3 +2,28 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+.search-modal {
+  z-index: 9999;
+
+  .modal-content {
+    color: white;
+    background-color: transparent;
+    border: 0;
+
+    input {
+      outline: 0;
+    }
+  }
+}
+
+.modal-backdrop {
+  &.show {
+    opacity: 0.9;
+  }
+}
+
+.dark-backdrop {
+  background-color: black;
+}
+

@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  input[type=search] {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}

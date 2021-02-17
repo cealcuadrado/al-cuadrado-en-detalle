@@ -1,5 +1,9 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,7 +11,7 @@ import { BasicLayoutComponent } from './layouts/basic-layout/basic-layout.compon
 import { HeaderComponent } from './layouts/basic-layout/header/header.component';
 import { MainComponent } from './layouts/basic-layout/main/main.component';
 import { FooterComponent } from './layouts/basic-layout/footer/footer.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchModalComponent } from './layouts/basic-layout/header/search-modal/search-modal.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +19,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BasicLayoutComponent,
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    SearchModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

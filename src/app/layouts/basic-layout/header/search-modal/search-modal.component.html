@@ -1,0 +1,4 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+  <label><i class="fas fa-search fa-fw"></i> Buscar</label>
+  <input type="search" class="form-control form-control-lg" placeholder="Texto o tag" formControlName="searchQuery">
+</form>

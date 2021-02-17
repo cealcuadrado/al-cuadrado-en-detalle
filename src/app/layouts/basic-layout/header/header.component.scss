@@ -2,68 +2,122 @@ header {
   position: sticky;
   top: 0;
   padding: 1rem;
-  background-image: url('./../../../../assets/img/bg.jpg');
+  background-image: url("./../../../../assets/img/bg.jpg");
   background-position: center;
 
   @media screen and (max-width: 991px) {
     position: fixed;
     width: 100%;
-    z-index: 9999;
+    z-index: 9000;
   }
 
   @media screen and (min-width: 992px) {
     height: 100vh;
   }
 
-  .custom-navbar-brand {
-    color: white;
-    background-color: black;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    font-size: 2rem;
-    text-align: right;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
+  nav {
+    .header-title {
+      display: flex;
 
-    &:hover {
-      color: black;
-      background-color: white;
+      @media screen and (max-width: 991px) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media screen and (min-width: 992px) {
+        flex-direction: column;
+      }
+
+      .custom-brand {
+        color: white;
+        background-color: black;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+
+        @media screen and (max-width: 991px) {
+          font-size: 0.85rem;
+        }
+
+        @media screen and (min-width: 992px) {
+          font-size: 2rem;
+          text-align: right;
+        }
+
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+      }
+
+      .header-buttons {
+        display: flex;
+        align-items: center;
+
+        .navbar-toggler {
+          border-radius: 0;
+          padding: 0.5rem;
+          color: white;
+          background-color: black;
+
+          &:hover {
+            color: black;
+            background-color: white;
+          }
+
+          @media screen and (min-width: 992px) {
+            display: none;
+          }
+        }
+      }
     }
-  }
 
-  .custom-brand {
-    color: white;
-    background-color: black;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
+    .header-search {
+      @media screen and (max-width: 991px) {
+        display: none;
+      }
 
+      button {
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: 0;
+        color: white;
+        background-color: black;
 
-    @media screen and (min-width: 992px) {
-      font-size: 2rem;
-      text-align: right;
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+      }
     }
 
-    &:hover {
-      color: black;
-      background-color: white;
-    }
-  }
+    .navbar {
+      .nav-item {
+        .nav-link {
+          width: 100%;
+          color: white;
+          background-color: black;
+          text-transform: uppercase;
+          font-weight: bold;
 
-  .navbar-toggler {
-    border-radius: 0;
-    padding: 0.5rem;
-    color: white;
-    background-color: black;
+          @media screen and (max-width: 992px) {
+            font-size: 0.85rem;
+            padding: 0.5rem;
+          }
 
-    &:hover {
-      color: black;
-      background-color: white;
+          @media screen and (min-width: 992px) {
+            text-align: right;
+          }
+
+          &:hover {
+            color: black;
+            background-color: white;
+          }
+        }
+      }
     }
   }
 }
-

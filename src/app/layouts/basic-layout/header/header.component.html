@@ -1,17 +1,38 @@
 <header>
-  <nav class="navbar navbar-expand-lg p-0">
-    <span class="custom-brand">
-      Al Cuadrado en Detalle
-    </span>
-    <!--
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars fa-fw"></i>
-    </button>
-    -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse">
-      <i class="fas fa-bars fa-fw"></i>
-    </button>
+  <nav>
+    <div class="header-title">
+      <a class="custom-brand" href="#" routerLink='/home'>
+        Al Cuadrado en Detalle
+      </a>
+      <div class="header-buttons">
+        <button class="navbar-search navbar-toggler" (click)="openModal()">
+          <i class="fas fa-search fa-fw"></i>
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleMenuCollapse()">
+          <i class="fas fa-bars fa-fw"></i>
+        </button>
+      </div>
+    </div>
+    <div class="header-search">
+      <button class="btn btn-block text-right mt-2" (click)="openModal()">
+        <i class="fas fa-search fa-fw"></i> Buscar
+      </button>
+    </div>
+    <div class="navbar navbar-expand-lg px-0">
+      <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto d-flex flex-column w-100">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-archive fa-fw"></i> Archivo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-rss fa-fw"></i> RSS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
-
