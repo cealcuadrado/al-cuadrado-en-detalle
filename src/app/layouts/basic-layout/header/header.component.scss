@@ -91,6 +91,10 @@ header {
           color: black;
           background-color: white;
         }
+
+        &:focus {
+          border-radius: 0;
+        }
       }
     }
 
